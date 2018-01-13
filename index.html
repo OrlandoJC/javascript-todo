@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="todo">
+        <div class="todo__encabezado">
+            <h1>TODO LIST</h1>
+            <button class="btn-delete" id="add-task">Delete all completed</button>
+        </div>
+        <div class="todo__body">
+            <div class="body__search">
+                <input placeholder="Add a new TODO" type="text" id="search-box">
+            </div>
+            <div class="body__task">
+                <ul id="list">
+                    <li class="completed"><span>X</span>Programar</li>
+                    <li><span>X</span>Lavar los trastes</li>
+                    <li><span>X</span>Aprender js</li>
+                </ul>
+            </div>
+        </div>
+        <div class="warning hidde" id="warning-alert">
+            <p>All completed task has been deleted</p>
+        </div>
+    </div>
+    <script src="js/todo.js"></script>
+</body>
+
+</html>

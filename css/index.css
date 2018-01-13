@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+body {
+    background: #141E30;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.todo {
+    width: 700px;
+    height: auto;
+    margin: 100px auto;
+    overflow: hidden;
+    border-radius: 5px;
+    -webkit-box-shadow: -7px 6px 69px -10px rgba(20, 30, 48, 1);
+    -moz-box-shadow: -7px 6px 69px -10px rgba(20, 30, 48, 1);
+    box-shadow: -7px 6px 69px -10px rgba(20, 30, 48, 1);
+}
+
+.todo__encabezado {
+    background-color: #2980b9;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo__encabezado h1 {
+    display: inline-block;
+    color: white;
+}
+
+.todo__encabezado .btn-delete {
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+}
+
+.todo__encabezado .btn-delete:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.body__search input[type="text"] {
+    width: 100%;
+    height: 40px;
+    border: none;
+    padding: 30px;
+}
+
+.body__task li {
+    display: inline-block;
+    height: 40px;
+    background-color: white;
+    width: 105%;
+    margin-left: -31px;
+    transition: .4s;
+}
+
+.body__task li:hover {
+    margin-left: 0px;
+    cursor: pointer;
+}
+
+.body__task li span {
+    background-color: red;
+    display: inline-block;
+    padding: 10px;
+    height: 100%;
+    color: white;
+    margin-right: 14px;
+}
+
+.body__task li:nth-child(odd) {
+    background-color: #ecf0f1;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.hidde {
+    display: none;
+}
+
+.warning {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #c0392b;
+    color: white;
+    border-radius: 5px;
+}
