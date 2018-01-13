@@ -1,7 +1,7 @@
 /******************************************
  *  Author : orlando   
  *  Created On : Tue Jan 09 2018
- *  File : productos.js
+ *  File : todo.js
  *******************************************/
 var ul = document.getElementById('list');
 var input = document.getElementById('search-box');
