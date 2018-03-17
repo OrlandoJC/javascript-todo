@@ -36,17 +36,16 @@
             }
         })
 
-        localStorage.setItem('tasks', JSON.stringify(allTasksLocalStorage));
+        localStorage.setItem(
+            'tasks', 
+            JSON.stringify(allTasksLocalStorage)
+        );
     }
 
     function getLocalStorage() {
-        var tasks;
-        if (localStorage.getItem('tasks') === null) {
-            tasks = [];
-        } else {
-            tasks = JSON.parse(localStorage.getItem("tasks"));
-        }
-        return tasks;
+         return localStorage.getItem('tasks') === null
+            ? []
+            :  tasks = JSON.parse(localStorage.getItem("tasks"));
     }
 
     function makeTask(task) {
@@ -76,9 +75,8 @@
     function alertDeleted() {
         alert.classList.remove('hidde');
 
-        var interval = setInterval(function() {
+         setTimeout(function() {
             alert.classList.add('hidde');
-            clearInterval(interval);
         }, 2000);
     }
 
